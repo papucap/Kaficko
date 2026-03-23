@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Kávomat</h1>
+
+    <form id="form">
+
+        <h2>Kdo pije?</h2>
+        <div class="uzivatel-skupina" id="uzivateleSekce">
+            <p class="loading">Načítám uživatele…</p>
+        </div>
+
+        <h2>Co jsi vypil/a?</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nápoj</th>
+                    <th>Počet</th>
+                </tr>
+            </thead>
+            <tbody id="napojeTelo">
+                <tr>
+                    <td colspan="2" class="loading">Načítám nápoje…</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button type="submit" id="submitBtn" disabled>Odeslat záznam</button>
+
+    </form>
+</body>
+<script src="script.js"></script>
+
+</html>
